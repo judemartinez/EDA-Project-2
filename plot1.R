@@ -1,0 +1,2 @@
+aggregateTotal <- aggregate(Emissions ~ year,NEI, sum)
+barplot(aggregateTotal$Emissions,names.arg=aggregateTotal$year,xlab="Year",ylab="PM2.5 Emissions",main="Total PM2.5 Emissions From All US Sources")
